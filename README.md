@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/60800960/156828394-eb91c460-5f08-4442-933d-1c897e3a8e1b.png)
+
 ---
 
 # EngenhariaDeSoftware
@@ -9,7 +9,6 @@ Projeto de desenvolvimento de sistema WEB da disciplina de Engenharia de Softwar
 
 ## Status do Projeto
 ---
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=BLUE&style=for-the-badge)
 :construction: Projeto em construção :construction:
 
 ## Tecnologias
