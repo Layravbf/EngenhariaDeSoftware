@@ -35,5 +35,7 @@ O projeto trata-se de uma aplicação voltada para uso pessoal de estudantes em 
 
 ## :woman: Autores
 - <a href="https://github.com/Layravbf" target="_blank">Layra Vilas Boas Ferreira</a>
+- <a href="https://github.com/jh-ennifer" target="_blank">Jhennifer Aparecida Rodrigues Borges</a>
+- <a href="https://github.com/giovannatrindade" target="_blank">Giovanna Cristina Santos da Trindade</a>
 
 
