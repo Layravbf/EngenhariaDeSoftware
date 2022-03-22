@@ -5,7 +5,7 @@
 Projeto de desenvolvimento de sistema WEB da disciplina de Engenharia de Software - UFLA 
 
 ## Resumo do Projeto
----
+O projeto trata-se de uma aplicação voltada para uso pessoal de estudantes em geral, seja do ensino fundamental, ensino médio, ensino superior, etc. A proposta é criar uma plataforma que permita aos usuários controlar e monitorar suas notas em cada atividade de cada disciplina.
 
 ## Status do Projeto
 ---
