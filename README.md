@@ -13,6 +13,13 @@ Projeto de desenvolvimento de sistema WEB da disciplina de Engenharia de Softwar
 
 ## Tecnologias
 
+💻PHP 8.1.4
+💻Apache 2.4.52
+💻MariaDB 10.4.24
+
+🖼Html
+🖼CSS
+
 :art:<a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=0%3A1" target="_blank">Link Figma</a>
 
 ---
