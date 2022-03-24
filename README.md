@@ -1,7 +1,7 @@
 # IZYNotes
 <p align="center">
   <a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=16%3A3">
-    <img src="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=16%3A3" alt="Logo">
+    <img src="https://ibb.co/71YnfHg" alt="Logo">
   </a>
 </p>
 
