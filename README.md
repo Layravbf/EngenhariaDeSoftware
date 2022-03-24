@@ -1,6 +1,8 @@
 # IZYNotes
 
-<img src="https://user-images.githubusercontent.com/60800960/159824334-0f185861-c25d-41d9-8575-afb08c8571a6.png"  alt="logo" />
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60800960/159824334-0f185861-c25d-41d9-8575-afb08c8571a6.png"  alt="logo" />
+</p>
 
 ## 📝 Resumo do Projeto
 Este é um projeto de desenvolvimento de sistema WEB da disciplina de Engenharia de Software - UFLA 
