@@ -1,6 +1,8 @@
 # IZYNotes
 <p align="center">
-  ![Image](https://user-images.githubusercontent.com/60800960/159823016-c35f5ead-5710-4743-8da1-51d7668f8784.png)
+  <a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=16%3A3">
+    <img src="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=16%3A3" alt="Logo">
+  </a>
 </p>
 
 ## 📝 Resumo do Projeto
@@ -10,7 +12,7 @@ O nosso sistema trata-se de uma aplicação voltada para uso pessoal de estudant
 
 ## :art: Protótipo
 
-<a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=0%3A1" target="_blank">Link Figma</a>
+- <a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=0%3A1" target="_blank">Link Figma</a>
 
 ## 💻 Tecnologias
 
