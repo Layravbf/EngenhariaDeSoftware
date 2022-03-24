@@ -1,28 +1,25 @@
-
----
-
 # IZYNotes
-Projeto de desenvolvimento de sistema WEB da disciplina de Engenharia de Software - UFLA 
+<p align="center">
+  ![Image](https://user-images.githubusercontent.com/60800960/159823016-c35f5ead-5710-4743-8da1-51d7668f8784.png)
+</p>
 
-## Resumo do Projeto
-O projeto trata-se de uma aplicação voltada para uso pessoal de estudantes em geral, seja do ensino fundamental, ensino médio, ensino superior, etc. A proposta é criar uma plataforma que permita aos usuários controlar e monitorar suas notas em cada atividade de cada disciplina.
+## 📝 Resumo do Projeto
+Este é um projeto de desenvolvimento de sistema WEB da disciplina de Engenharia de Software - UFLA 
 
-## Status do Projeto
----
-:construction: Projeto em construção :construction:
+O nosso sistema trata-se de uma aplicação voltada para uso pessoal de estudantes em geral, seja do ensino fundamental, ensino médio, ensino superior, etc. A proposta é criar uma plataforma que permita aos usuários controlar e monitorar suas notas em cada atividade de cada disciplina.
 
-## Tecnologias
+## :art: Protótipo
 
-💻PHP 8.1.4
-💻Apache 2.4.52
-💻MariaDB 10.4.24
+<a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=0%3A1" target="_blank">Link Figma</a>
 
-🖼Html
-🖼CSS
+## 💻 Tecnologias
 
-:art:<a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=0%3A1" target="_blank">Link Figma</a>
+- PHP [8.1.4]
+- Apache [2.4.52]
+- MariaDB [10.4.24]
 
----
+- Html
+- CSS
 
 ## :hammer: Funcionalidades do projeto
 
@@ -31,9 +28,7 @@ O projeto trata-se de uma aplicação voltada para uso pessoal de estudantes em 
 - `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
 - `Funcionalidade 3`: descrição da funcionalidade 3
 
----
-
-## :woman: Autores
+## :woman: Autoras
 - <a href="https://github.com/Layravbf" target="_blank">Layra Vilas Boas Ferreira</a>
 - <a href="https://github.com/jh-ennifer" target="_blank">Jhennifer Aparecida Rodrigues Borges</a>
 - <a href="https://github.com/giovannatrindade" target="_blank">Giovanna Cristina Santos da Trindade</a>
