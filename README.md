@@ -1,9 +1,6 @@
 # IZYNotes
-<p align="center">
-  <a href="https://www.figma.com/file/s7kTzMO06K9gTnJTsscyFG/Eng.-Software?node-id=16%3A3">
-    <img src="file:///C:/Users/layra.ferreira_dp6/Downloads/_Path_%20(1)%201.png" alt="Logo">
-  </a>
-</p>
+
+![Image](https://user-images.githubusercontent.com/60800960/159824334-0f185861-c25d-41d9-8575-afb08c8571a6.png)
 
 ## 📝 Resumo do Projeto
 Este é um projeto de desenvolvimento de sistema WEB da disciplina de Engenharia de Software - UFLA 
