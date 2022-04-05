@@ -29,6 +29,12 @@ O nosso sistema trata-se de uma aplicação voltada para uso pessoal de estudant
 - `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
 - `Funcionalidade 3`: descrição da funcionalidade 3
 
+## Regras e padrões:
+Essa seção está sendo criada com o intuito de padronizar o uso do github, para que não haja confusão entre as colaboradoras
+- Os diagramas devem estar todos na pasta "Diagramas";
+- Os commits devem ser suscintos mas dizer de maneira clara o que foi feito;
+- A documentação do projeto sempre estará na pasta de requisitos;
+
 ## :woman: Autoras
 - <a href="https://github.com/Layravbf" target="_blank">Layra Vilas Boas Ferreira</a>
 - <a href="https://github.com/jh-ennifer" target="_blank">Jhennifer Aparecida Rodrigues Borges</a>
