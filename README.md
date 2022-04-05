@@ -41,6 +41,14 @@ Essa seção está sendo criada com o intuito de padronizar o uso do github, par
 - Explicar cada trecho de código de acordo com a necessidade;
 - Todas as funções devem ser comentadas explicando que fazem;
 
+## Padrões de código:
+- Todos os arquivos de programa deve conter, no início, um comentário descrevendo a finalidade do mesmo;
+- As variáveis devem ser declaradas sempre no início das funções;
+- As funções dos códigos devem ser indentadas, aumentando assim a legibilidade do código;
+- As variáveis devem possuir nomes significativos;
+- Os programas devem ser escritos de maneira simples e direta;
+- Sempre verificar se a branch de destino está atualizada antes de realizar adições.
+
 ## :woman: Autoras
 - <a href="https://github.com/Layravbf" target="_blank">Layra Vilas Boas Ferreira</a>
 - <a href="https://github.com/jh-ennifer" target="_blank">Jhennifer Aparecida Rodrigues Borges</a>
