@@ -32,8 +32,14 @@ O nosso sistema trata-se de uma aplicação voltada para uso pessoal de estudant
 ## Regras e padrões:
 Essa seção está sendo criada com o intuito de padronizar o uso do github, para que não haja confusão entre as colaboradoras
 - Os diagramas devem estar todos na pasta "Diagramas";
+- O documento de requisitos e a lista de requisitos devem ser adicionados na pasta de Requisitos;
+- O mapa de navegação e as imagens das telas devem ser adicionados na pasta de Protótipo de interfaces
 - Os commits devem ser suscintos mas dizer de maneira clara o que foi feito;
-- A documentação do projeto sempre estará na pasta de requisitos;
+
+## Padrões de comentários:
+- Os comentários devem ser suscintos mas bem feitos;
+- Explicar cada trecho de código de acordo com a necessidade;
+- Todas as funções devem ser comentadas explicando que fazem;
 
 ## :woman: Autoras
 - <a href="https://github.com/Layravbf" target="_blank">Layra Vilas Boas Ferreira</a>
