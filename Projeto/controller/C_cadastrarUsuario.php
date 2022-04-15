@@ -1,3 +1,4 @@
+<!-- Cadastro dos usuários no banco de dados  -->
 <?php
     include_once("../persistence/connection.php");
     include_once("../model/Usuario.php");
@@ -5,6 +6,7 @@
 
     session_start();
 
+    // Estabelece conexão com o banco de dados
     $conexao = new connection();
     $conexao->connect();
 

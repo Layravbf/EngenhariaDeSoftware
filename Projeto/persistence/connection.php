@@ -1,3 +1,4 @@
+<!-- Instância Conexão para estabelecer conexão com o banco de dados  -->
 <?php
     class connection{
         private $server = "localhost";

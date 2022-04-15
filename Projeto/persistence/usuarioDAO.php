@@ -1,3 +1,4 @@
+<!-- Instância Usuário para realizar cadastro, consulta, exclusão e alteração  -->
 <?php
     class usuarioDAO {
         

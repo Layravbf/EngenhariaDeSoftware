@@ -1,3 +1,4 @@
+<!-- Exclusão dos dados dos usuários no banco de dados  -->
 <?php
     include_once("../persistence/connection.php");
     include_once("../persistence/usuarioDAO.php");

@@ -1,3 +1,4 @@
+<!-- Validação dos usuários no banco de dados para logar no sistema -->
 <?php
     session_start();
     include_once("../persistence/loginDAO.php");

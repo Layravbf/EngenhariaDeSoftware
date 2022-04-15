@@ -1,3 +1,4 @@
+<!-- Instância Usuário para pegar seus parâmetros de email e senha  -->
 <?php
     class Usuario{
         private $email;

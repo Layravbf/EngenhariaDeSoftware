@@ -1,3 +1,4 @@
+<!-- Instância Login para validar os logins  -->
 <?php
     class loginDAO{
         function __construct(){}
