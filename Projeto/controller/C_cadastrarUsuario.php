@@ -20,7 +20,6 @@
         $_SESSION['cadastrado'] = true;
         header('Location: http://localhost/Projeto/view/index.php');
     }else{
-        echo 'porra';
         $_SESSION['cadastrado'] = false;
         header('Location: http://localhost/Projeto/view/cadastro.php');
     }
