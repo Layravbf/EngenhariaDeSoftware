@@ -16,6 +16,48 @@
     <title>Login</title>
   </head>
   <body>
+    <div style = "width: 280px" id="alert">
+      <div>
+        <?php
+          if(isset($_SESSION['cadastrado'])):
+        ?>
+        <div style="margin-right: 0; position: absolute" class="alert alert-success" role="alert">
+          Usuário cadastrado com sucesso!
+        </div>
+        <?php
+          endif;
+          unset($_SESSION['cadastrado']);
+        ?>
+      </div>
+    </div>
+    <div id="alert">
+      <div>
+        <?php
+          if(isset($_SESSION['excluido'])):
+        ?>
+        <div style="margin-right: 0; position: absolute" class="alert alert-success" role="alert">
+          Dados excluídos com sucesso!
+        </div>
+        <?php
+          endif;
+          unset($_SESSION['excluido']);
+        ?>
+      </div>
+    </div>
+    <div id="alert-success">
+      <div>
+        <?php
+          if(isset($_SESSION['alterado'])):
+        ?>
+        <div style="margin-right: 0; position: absolute" class="alert alert-success" role="alert">
+          Dados alterados com sucesso! Faça login com os novos dados.
+        </div>
+        <?php
+          endif;
+          unset($_SESSION['alterado']);
+        ?>
+      </div>
+    </div>
     <div id="alert">
       <div>
         <?php
@@ -30,7 +72,7 @@
         ?>
       </div>
     </div>
-    <div class="container">
+    <div class="login container">
         <div class="row">
             <div class="col">
                 <h1>IZYNotes</h1>
@@ -45,12 +87,12 @@
                       <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
                     <div class="form-group">
-                      <a href="cadastro.html">Cadastrar-se</a>
+                      <a class="button" href="cadastro.php">Cadastrar-se</a>
                     </div>
                 </form>
             </div>
-            <div class="col">
-                <img style="width: 80%; height: 80%" src="images/login.png"></img>
+            <div class="img col">
+                <img style="width: 70%; height: 70%" src="images/login.png"></img>
             </div>
         </div>
     </div>

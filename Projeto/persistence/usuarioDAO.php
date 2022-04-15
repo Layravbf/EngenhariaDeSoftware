@@ -8,21 +8,21 @@
             VALUES ('".
 			($usuario->getEmail())."','".
 			($usuario->getSenha())."')";
-
-            if($conn->query($sql)){
-                echo "usuario cadastrado";
-            }else
-                echo "usuario não cadastrado";
+            return $conn->query($sql);
         }
 
         function alterar($email, $senha,  $emailLogin, $conn){
 		    $sql = "UPDATE `usuarios` SET `email` = '" .$email. "', `senha` = '". $senha ."' WHERE `usuarios`.`email` = '". $emailLogin ."'";
-            if($conn->query($sql)){
-                echo $emailLogin;
-            }else{
-                echo ":((";
-            }
-            
+            return $conn->query($sql);
+        }
+
+        function consultar($email, $conn){
+            $sql = "SELECT `email`, `senha` FROM `usuarios` WHERE `usuarios`.`email`='". $email ."'";
+            return $conn->query($sql);
+        }
+
+        function excluir($email, $conn){
+            $sql = "DELETE FROM `usuarios` WHERE `usuarios`.`email`='". $email ."'";
             return $conn->query($sql);
         }
     }

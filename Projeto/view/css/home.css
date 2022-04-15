@@ -1,9 +1,6 @@
 body{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 a{
@@ -11,22 +8,20 @@ a{
     color: black !important;
     font-size: 1.1rem !important;
     text-decoration: none !important;
+    
 }
-/* nav{
-    position: absolute;
-} */
 
-.alo{
-    position: fixed !important;
+.nav{
     width: 100%;
+    height: 10%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 0 !important;
+    padding-top: 2em;
+    justify-content: space-around;
 }
 
- #pag{
-    /* width: 100%;
-    height: 100%; */
+#pag{
+    width: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center; 

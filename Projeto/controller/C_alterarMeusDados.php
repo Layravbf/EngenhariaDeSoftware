@@ -13,11 +13,11 @@
 
     $usuario = new usuarioDAO();
 
-    // $res = $usuario->alterar($email, $senha, $conexao->getConn());
     $res = $usuario->alterar($email, $senha, $emailLogin, $conexao->getConn());
 
     if($res === TRUE){
-        echo $senha;
+        $_SESSION['alterado']=true;
+        header('Location: http://localhost/Projeto/view/index.php');
     }else{
-        echo "Não foi :(";
+        $_SESSION['alterado']=false;
     }
