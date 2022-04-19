@@ -1,4 +1,5 @@
 <?php
+// Código feito para adicionar uma atividade
     include_once("../persistence/connection.php");
     include_once("../model/Atividade.php");
     include_once("../persistence/atividadeDAO.php");
@@ -15,7 +16,8 @@
     $tipo = $_POST['tipo'];
     $valor = $_POST['valor'];
     $nota = $_POST['nota'];
-
+    /* Verifica se o nome e/ou o tipo da atividade são menores que 50, se forem, um pop-up é exibido com erro, senão a
+    atividade é inserida */
     if(strlen($nomeAtividade) > 50 && strlen($tipo) < 50){
         $_SESSION['erroAtividade'] = true;
         header("Location: http://localhost/Projeto/view/adicionarAtividade.php");
@@ -37,4 +39,3 @@
             header("Location: http://localhost/Projeto/view/atividadePorDisciplina.php?nomeDisciplina=$disciplina");
         }
     }
-?>
