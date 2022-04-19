@@ -1,4 +1,5 @@
 <?php
+    // Código feito para adicionar um período
     include_once("../persistence/connection.php");
     include_once("../model/Periodo.php");
     include_once("../persistence/periodoDAO.php");
@@ -13,7 +14,7 @@
     $aprovacao = $_POST['aprovacao'];
 
     $_SESSION['nomePeriodo'] = $nomePeriodo;
-
+    /* Verifica se o nome do período é menor que 50, se for, um pop-up é exibido com erro, senão o período é inserido */
     if(strlen($nomePeriodo) > 50){
         $_SESSION['erroPeriodo'] = true;
         header('Location: http://localhost/Projeto/view/adicionarPeriodo.php');
@@ -33,4 +34,3 @@
             header('Location: http://localhost/Projeto/view/periodos.php');
         }
     }
-?>

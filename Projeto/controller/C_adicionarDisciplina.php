@@ -15,7 +15,7 @@
     $professor = $_POST['professor'];
     $notaFinal = $_POST['notaFinal'];
     /* Verifica se o nome da disciplina e/ou o nome do professor são menores que 50, se forem, 
-    um pop-up é exibido com erro, senão a atividade é inserida */
+    um pop-up é exibido com erro, senão a disciplina é inserida */
     if(strlen($nomeDisciplina) > 50 && strlen($professor) < 50){
         $_SESSION['erroDisciplina'] = true;
         header("Location: http://localhost/Projeto/view/adicionarDisciplina.php");
