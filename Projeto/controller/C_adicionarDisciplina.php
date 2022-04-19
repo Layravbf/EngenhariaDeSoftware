@@ -1,4 +1,5 @@
 <?php
+    // Código feito para adicionar uma disciplina
     include_once("../persistence/connection.php");
     include_once("../model/Disciplina.php");
     include_once("../persistence/disciplinaDAO.php");
@@ -14,6 +15,8 @@
     $professor = $_POST['professor'];
     $notaFinal = $_POST['notaFinal'];
 
+    
+    
     if(strlen($nomeDisciplina) > 50 && strlen($professor) < 50){
         $_SESSION['erroDisciplina'] = true;
         header("Location: http://localhost/Projeto/view/adicionarDisciplina.php");
