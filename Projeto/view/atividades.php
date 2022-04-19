@@ -2,11 +2,16 @@
 include_once("../persistence/connection.php");
 session_start();
 $emailLogin = $_SESSION['emailLogin'];
+$txtPesquisa = (isset($_GET["pesquisa"])) ? $_GET["pesquisa"] : "" ;
 
 $conexao = new connection();
 $conexao->connect();
 
-$sqlQuery = "SELECT atividade, tipo, valor, nota FROM atividades WHERE `atividades`.`email_fk` = '". $emailLogin ."'";
+if($txtPesquisa != ''){
+  $sqlQuery = "SELECT atividade, tipo, valor, nota FROM atividades WHERE `atividades`.`atividade` LIKE '%{$txtPesquisa}%' AND `atividades`.`email_fk` = '". $emailLogin ."'";
+} else{
+  $sqlQuery = "SELECT atividade, tipo, valor, nota FROM atividades WHERE `atividades`.`email_fk` = '". $emailLogin ."'";
+}
 $resultSet = mysqli_query($conexao->getConn(), $sqlQuery) or die("database error:". mysqli_error($conexao->getConn()));
 ?>
 <!doctype html>
@@ -27,6 +32,16 @@ $resultSet = mysqli_query($conexao->getConn(), $sqlQuery) or die("database error
         <a class="nav-b" href="home.html"><img style="width: 20px; height: 20px" src="images/seta.png"></img></a>
         <a class="nav-b" href="index.php">Sair</a>
     </div>
+    <form action="atividades.php" style="display: flex; justify-content:center; padding-top: 4%" role="search">
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="Pesquisar..." name="pesquisa">
+      </div>
+      <button style="background-color: #638DCC" type="submit" class="btn btn-default">
+        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>     
+      </button>
+    </form>
     <div id="pag" class="container">
       <div id="title" class="row">
         <b>Atividades</b>
@@ -48,7 +63,7 @@ $resultSet = mysqli_query($conexao->getConn(), $sqlQuery) or die("database error
             <td><?php echo $atividade ['valor']; ?></td>
             <td><?php echo $atividade ['nota']; ?></td>
             <td style="width: 150px;">
-              <a class="buttons" href="editarAtividades.php?nomeAtividade=<?php echo $atividade ['atividade']; ?>">Editar</a>
+              <a class="buttons" href="editarAtividade.php?nomeAtividade=<?php echo $atividade ['atividade']; ?>">Editar</a>
               <a class="buttons" href="..\controller\C_excluirAtividade.php?nomeAtividade=<?php echo $atividade ['atividade']; ?>">Excluir</a>
             </td>
             </tr>
