@@ -29,4 +29,3 @@
             header("Location: http://localhost/Projeto/view/disciplinaPorPeriodo.php?nomePeriodo=$periodo");
         }
     }
-?>

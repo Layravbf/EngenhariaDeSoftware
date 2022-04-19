@@ -1,4 +1,5 @@
 <?php
+    // código para excluir atividade
     include_once("../persistence/connection.php");
     include_once("../persistence/atividadeDAO.php");
 
@@ -11,10 +12,10 @@
     $conexao->connect();
 
     $nomeAtividade = $_GET['nomeAtividade'];
-
+    
     $atividade = new atividadeDAO();
     $res = $atividade->consultar($nomeAtividade, $emailLogin, $periodo, $disciplina, $conexao->getConn());
-
+    // Verifica se a atividade existe, se existir, exclui
     if($res){
         $res1 = $atividade->excluir($nomeAtividade, $emailLogin, $periodo, $disciplina, $conexao->getConn());
 
@@ -23,4 +24,3 @@
             header("Location: http://localhost/Projeto/view/atividadePorDisciplina.php?nomeDisciplina=$disciplina");
         }
     }
-?>
