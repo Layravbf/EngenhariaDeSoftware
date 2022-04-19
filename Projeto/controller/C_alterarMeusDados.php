@@ -1,4 +1,3 @@
-<!-- Alteração dos dados dos usuários no banco de dados  -->
 <?php
     include_once("../persistence/connection.php");
     include_once("../persistence/usuarioDAO.php");
@@ -9,16 +8,22 @@
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $conexao = new connection();
-    $conexao->connect();
-
-    $usuario = new usuarioDAO();
-
-    $res = $usuario->alterar($email, $senha, $emailLogin, $conexao->getConn());
-
-    if($res === TRUE){
-        $_SESSION['alterado']=true;
-        header('Location: http://localhost/Projeto/view/index.php');
+    if(strlen($senha) < 8){
+        $_SESSION['erroSenha'] = true;
+        header('Location: http://localhost/Projeto/view/meusDados.php');
     }else{
-        $_SESSION['alterado']=false;
+
+        $conexao = new connection();
+        $conexao->connect();
+
+        $usuario = new usuarioDAO();
+
+        $res = $usuario->alterar($email, $senha, $emailLogin, $conexao->getConn());
+
+        if($res === TRUE){
+            $_SESSION['alterado']=true;
+            header('Location: http://localhost/Projeto/view/index.php');
+        }else{
+            $_SESSION['alterado']=false;
+        }
     }

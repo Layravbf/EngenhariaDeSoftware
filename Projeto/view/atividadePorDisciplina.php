@@ -89,13 +89,13 @@ $resultSet = mysqli_query($conexao->getConn(), $sqlQuery) or die("database error
         </thead>
         <tbody>
           <?php while( $atividade = mysqli_fetch_assoc($resultSet)){ ?>
-            <td><?php echo $atividade ['atividade']; ?></td>
+            <td><?php $nomeAtividade = $atividade ['atividade']; echo $atividade ['atividade']; ?></td>
             <td><?php echo $atividade ['tipo']; ?></td>
             <td><?php echo $atividade ['valor']; ?></td>
             <td><?php echo $atividade ['nota']; ?></td>
             <td style="width: 150px;">
-              <a class="buttons" href="editarAtividade.php?nomeAtividade=<?php echo $atividade ['atividade']; ?>">Editar</a>
-              <a class="buttons" href="..\controller\C_excluirAtividade.php?nomeAtividade=<?php echo $atividade ['atividade']; ?>">Excluir</a>
+              <a class="buttons" href="editarAtividade.php?nomeAtividade=<?php echo $nomeAtividade ?>">Editar</a>
+              <a class="buttons" href="..\controller\C_excluirAtividade.php?nomeAtividade=<?php echo $nomeAtividade ?>">Excluir</a>
             </td>
             </tr>
           <?php } ?>

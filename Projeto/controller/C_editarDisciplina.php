@@ -6,7 +6,7 @@
     $emailLogin = $_SESSION['emailLogin'];
     $periodo = $_SESSION['nomePeriodo'];
 
-    $nomeDisciplina = $_SESSION['nomeDisciplina'];
+    $nomeDisciplina = $_SESSION['nomeDisciplina'];    
     $disciplina = $_POST["disciplina"];
     $professor = $_POST["professor"];
     $notaFinal = $_POST['notaFinal'];

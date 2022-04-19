@@ -16,6 +16,21 @@
     <title>Cadastro</title>
   </head>
   <body>
+    <div style="width: 300px" id="alert">
+      <div>
+        <?php
+          if(isset($_SESSION['erroSenha'])):
+        ?>
+        <div style="margin-right: 0; position: absolute;" class="alert alert-danger" role="alert">
+          A senha deve possuir no mínimo 8 caracteres!
+        </div>
+        <?php
+          unset($_SESSION['erroSenha']);
+          endif;
+          
+        ?>
+      </div>
+    </div>
     <div style="width: 180px" id="alert">
       <div>
         <?php

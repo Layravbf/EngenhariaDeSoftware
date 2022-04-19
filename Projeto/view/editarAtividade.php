@@ -6,7 +6,7 @@
   $_SESSION['nomeAtividade'] = $nomeAtividade;
   $emailLogin = $_SESSION['emailLogin'];
   $periodo = $_SESSION['nomePeriodo'];
-  $disciplina = $_SESSION['nomeDisciplina'];
+  $disciplina = $_SESSION['disciplinaAtividade'];
 
   $conexao = new connection();
   $conexao->connect();

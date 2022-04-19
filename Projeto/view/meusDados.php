@@ -22,6 +22,21 @@
     <title>Meus Dados</title>
   </head>
   <body>
+    <div style="width: 300px; height: 80px; bottom: 10px; right: 5px; position: fixed;" id="alert">
+      <div>
+        <?php
+          if(isset($_SESSION['erroSenha'])):
+        ?>
+        <div style="margin-right: 0; position: absolute;" class="alert alert-danger" role="alert">
+          A senha deve possuir no mínimo 8 caracteres!
+        </div>
+        <?php
+          unset($_SESSION['erroSenha']);
+          endif;
+          
+        ?>
+      </div>
+    </div>
     <div class="nav">
       <a class="nav-b" href="home.html"><img style="width: 20px; height: 20px" src="images/seta.png"></img></a>
       <form style="height: 0" action="..\controller\C_excluirUsuario.php" method="POST">
@@ -31,7 +46,7 @@
       </form>
       <a class="nav-b" href="index.php">Sair</a>
     </div>
-    <div id="meusDados" class="container">
+    <div class="container">
         <div class="row">
             <div class="col">
                 <form action="..\controller\C_alterarMeusDados.php" method="POST">

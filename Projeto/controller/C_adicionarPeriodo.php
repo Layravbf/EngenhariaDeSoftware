@@ -29,7 +29,7 @@
             $res2 = $periododao->adicionar($periodo, $conexao->getConn());
             header('Location: http://localhost/Projeto/view/periodos.php');
         }else{
-            
+            $_SESSION['pJaAdicionado'] = true;
             header('Location: http://localhost/Projeto/view/periodos.php');
         }
     }

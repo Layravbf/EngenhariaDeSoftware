@@ -19,9 +19,6 @@
         if($res1){
             $_SESSION['excluido'] = true;
             header('Location: http://localhost/Projeto/view/index.php');
-        }else{
-            $_SESSION['excluido'] = false;
         }
     }
-
 ?>

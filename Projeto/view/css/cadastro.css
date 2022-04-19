@@ -52,7 +52,6 @@ body{
 }
 
 .nav{
-    /* position: fixed !important; */
     width: 100%;
     height: 20%;
     display: flex;
@@ -63,9 +62,6 @@ body{
 #meusDados{
     width: 100%;
     height: 80%;
-    /* display: flex;
-    justify-content: center; */
-    /* align-items: center;  */
 }
 
 #alert, #alert-success{

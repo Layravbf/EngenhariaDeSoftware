@@ -87,12 +87,12 @@ $resultSet = mysqli_query($conexao->getConn(), $sqlQuery) or die("database error
         </thead>
         <tbody>
           <?php while( $disciplina = mysqli_fetch_assoc($resultSet)){ ?>
-            <td><a class="nav-b" href="atividadePorDisciplina.php?nomeDisciplina=<?php echo $disciplina['disciplina']; ?>"><?php echo $disciplina ['disciplina']; ?></a></td>
+            <td><a class="nav-b" href="atividadePorDisciplina.php?nomeDisciplina=<?php $nomeDisciplina = $disciplina['disciplina']; echo $disciplina['disciplina']; ?>"><?php echo $disciplina ['disciplina']; ?></a></td>
             <td><?php echo $disciplina ['professor']; ?></td>
             <td><?php echo $disciplina ['nota_final']; ?></td>
             <td style="width: 150px;">
-              <a class="buttons" href="editarDisciplinas.php?nomeDisciplina=<?php echo $disciplina ['disciplina']; ?>">Editar</a>
-              <a class="buttons" href="..\controller\C_excluirDisciplina.php?nomeDisciplina=<?php echo $disciplina ['disciplina']; ?>">Excluir</a>
+              <a class="buttons" href="editarDisciplinas.php?nomeDisciplina=<?php echo $nomeDisciplina ?>">Editar</a>
+              <a class="buttons" href="..\controller\C_excluirDisciplina.php?nomeDisciplina=<?php echo $nomeDisciplina ?>">Excluir</a>
             </td>
             </tr>
           <?php } ?>

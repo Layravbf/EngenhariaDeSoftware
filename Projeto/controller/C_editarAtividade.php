@@ -5,13 +5,13 @@
     session_start();
     $emailLogin = $_SESSION['emailLogin'];
     $periodo = $_SESSION['nomePeriodo'];
-    $disciplina = $_SESSION['nomeDisciplina'];
+    $disciplina = $_SESSION['disciplinaAtividade'];
 
     $nomeAtividade = $_SESSION['nomeAtividade'];
     $atividade = $_POST["atividade"];
     $tipo = $_POST["tipo"];
     $valor = $_POST['valor'];
-    $nota = $_POST['nota'];
+    $nota = $_POST['nota'];  
 
     $conexao = new connection();
     $conexao->connect();
