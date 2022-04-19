@@ -1,4 +1,5 @@
 <?php
+// Código feito para editar uma atividade
     include_once("../persistence/connection.php");
     include_once("../persistence/atividadeDAO.php");
 
@@ -19,8 +20,8 @@
 
     $atividadedao = new atividadeDAO();
     $res1 = $atividadedao->consultar($atividade, $emailLogin, $periodo, $disciplina, $conexao->getConn());
-    if(mysqli_num_rows($res1) > 0){
-        $_SESSION['aJaAdicionada'] = true;
+    if(mysqli_num_rows($res1) > 0){ //verifica se a atividade já foi inserida, senão chama a função de editar
+        $_SESSION['aJaAdicionada'] = true; 
         header("Location: http://localhost/Projeto/view/atividadePorDisciplina.php?nomeDisciplina=$disciplina");
     }else{
         $res = $atividadedao->editar($atividade, $tipo, $valor, $nota, $emailLogin, $periodo, $disciplina, $nomeAtividade, $conexao->getConn());
@@ -29,4 +30,3 @@
             header("Location: http://localhost/Projeto/view/atividadePorDisciplina.php?nomeDisciplina=$disciplina");
         }
     }
-?>
