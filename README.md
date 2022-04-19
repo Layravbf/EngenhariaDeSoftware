@@ -24,10 +24,10 @@ O nosso sistema trata-se de uma aplicação voltada para uso pessoal de estudant
 
 ## :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`: descrição da funcionalidade 1
-- `Funcionalidade 2`: descrição da funcionalidade 2
-- `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
-- `Funcionalidade 3`: descrição da funcionalidade 3
+- `Períodos`: O usuário pode adicionar/excluir/alterar/consultar um período da faculdade.
+- `Disciplinas`: O usuário pode adicionar/excluir/alterar/consultar uma disciplina de determinado período da faculdade.
+- `Atividades`: O usuário pode adicionar/excluir/alterar/consultar uma atividade de determinada disciplina e período da faculdade.
+- `Meus Dados`: O usuário pode se cadastrar e alterar e excluir seus dados do sistema.
 
 ## Regras e padrões:
 Essa seção está sendo criada com o intuito de padronizar o uso do github, para que não haja confusão entre as colaboradoras
