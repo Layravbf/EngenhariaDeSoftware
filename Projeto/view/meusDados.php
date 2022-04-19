@@ -6,8 +6,6 @@
 
   $email = $_SESSION['emailLogin'];
   $senha = $_SESSION['senhaLogin'];
-
-
 ?>
 
 <!doctype html>
