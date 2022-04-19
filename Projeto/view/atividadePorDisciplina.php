@@ -68,6 +68,20 @@ $resultSet = mysqli_query($conexao->getConn(), $sqlQuery) or die("database error
         ?>
       </div>
     </div>
+    <div style="width: 250px; height: 80px; position: fixed; bottom: 10px !important; right: 5px;">
+      <div>
+        <?php
+          if(isset($_SESSION['aJaAdicionada'])):
+        ?>
+        <div style="margin-right: 0; position: absolute" class="alert alert-danger" role="alert">
+          Atividade já adicionada!
+        </div>
+        <?php
+          endif;
+          unset($_SESSION['aJaAdicionada']);
+        ?>
+      </div>
+    </div> 
     <div class="nav">
         <a class="nav-b" href="disciplinaPorPeriodo.php?nomePeriodo=<?php echo $periodo ?>"><img style="width: 20px; height: 20px" src="images/seta.png"></img></a>
         <a class="nav-b" href="adicionarAtividade.php">Adicionar Atividade</a>

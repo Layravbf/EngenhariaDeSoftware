@@ -11,17 +11,22 @@
     $atividade = $_POST["atividade"];
     $tipo = $_POST["tipo"];
     $valor = $_POST['valor'];
-    $nota = $_POST['nota'];  
+    $nota = $_POST['nota'];
+    
 
     $conexao = new connection();
     $conexao->connect();
 
     $atividadedao = new atividadeDAO();
-
-    $res = $atividadedao->editar($atividade, $tipo, $valor, $nota, $emailLogin, $periodo, $disciplina, $nomeAtividade, $conexao->getConn());
-
-    if($res === TRUE){
-        $_SESSION['atividadeAlterada'] = true;
+    $res1 = $atividadedao->consultar($atividade, $emailLogin, $periodo, $disciplina, $conexao->getConn());
+    if(mysqli_num_rows($res1) > 0){
+        $_SESSION['aJaAdicionada'] = true;
         header("Location: http://localhost/Projeto/view/atividadePorDisciplina.php?nomeDisciplina=$disciplina");
+    }else{
+        $res = $atividadedao->editar($atividade, $tipo, $valor, $nota, $emailLogin, $periodo, $disciplina, $nomeAtividade, $conexao->getConn());
+        if($res === TRUE){
+            $_SESSION['atividadeAlterada'] = true;
+            header("Location: http://localhost/Projeto/view/atividadePorDisciplina.php?nomeDisciplina=$disciplina");
+        }
     }
 ?>

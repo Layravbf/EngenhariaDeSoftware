@@ -16,13 +16,16 @@
 
     $disciplinadao = new disciplinaDAO();
 
-    $res = $disciplinadao->editar($disciplina, $professor, $notaFinal, $emailLogin, $periodo, $nomeDisciplina, $conexao->getConn());
     $res1 = $disciplinadao->consultar($disciplina, $emailLogin, $periodo, $conexao->getConn());
-
-    if($res === TRUE){
-        $dados = mysqli_fetch_assoc($res1);
-        $_SESSION['disciplinaAlterada'] = true;
-        $_SESSION['nomeDisciplina'] = $dados['disciplina'];
+    if(mysqli_num_rows($res1) > 0){
+        $_SESSION['dJaAdicionada'] = true;
         header("Location: http://localhost/Projeto/view/disciplinaPorPeriodo.php?nomePeriodo=$periodo");
+    }else{
+        $res = $disciplinadao->editar($disciplina, $professor, $notaFinal, $emailLogin, $periodo, $nomeDisciplina, $conexao->getConn());
+        if($res === TRUE){
+            $_SESSION['disciplinaAlterada'] = true;
+            $_SESSION['nomeDisciplina'] = $disciplina;
+            header("Location: http://localhost/Projeto/view/disciplinaPorPeriodo.php?nomePeriodo=$periodo");
+        }
     }
 ?>
