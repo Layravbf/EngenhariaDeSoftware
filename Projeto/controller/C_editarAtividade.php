@@ -20,7 +20,7 @@
 
     $atividadedao = new atividadeDAO();
     $res1 = $atividadedao->consultar($atividade, $emailLogin, $periodo, $disciplina, $conexao->getConn());
-    if(mysqli_num_rows($res1) > 0){ //verifica se a atividade já foi inserida, senão chama a função de editar
+    if(mysqli_num_rows($res1) > 0){ //Verifica se a atividade já foi inserida, senão chama a função de editar
         $_SESSION['aJaAdicionada'] = true; 
         header("Location: http://localhost/Projeto/view/atividadePorDisciplina.php?nomeDisciplina=$disciplina");
     }else{
