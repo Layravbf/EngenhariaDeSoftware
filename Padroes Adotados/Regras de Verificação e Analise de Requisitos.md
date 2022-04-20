@@ -29,6 +29,7 @@
     - TALVEZ
     - PROVAVELMENTE
 3. Evitar frases grandes
+    - Utilize frases de no máximo 200 caracteres, com margem de 30 caracteres para mais.
 4. Utilizar um vocabulário fechado
     - Ou seja, paralelamente à construção dos requisitos deverá ser criado um glossário de termos. Os termos utilizados na definição dos requisitos deverão estar fechados, ou seja, definidos no glossário.
 5. Manter uma estrutura hierárquica dos requisitos
