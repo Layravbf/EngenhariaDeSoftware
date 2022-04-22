@@ -1,4 +1,5 @@
 <?php
+// Código para alterar disciplina
     include_once("../persistence/connection.php");
     include_once("../persistence/disciplinaDAO.php");
 
@@ -17,7 +18,7 @@
     $disciplinadao = new disciplinaDAO();
 
     $res1 = $disciplinadao->consultar($disciplina, $emailLogin, $periodo, $conexao->getConn());
-    if(mysqli_num_rows($res1) > 0){
+    if(mysqli_num_rows($res1) > 0){ // verifica se a disciplina já foi adicionada, senão, chama a função de editar
         $_SESSION['dJaAdicionada'] = true;
         header("Location: http://localhost/Projeto/view/disciplinaPorPeriodo.php?nomePeriodo=$periodo");
     }else{
@@ -28,4 +29,3 @@
             header("Location: http://localhost/Projeto/view/disciplinaPorPeriodo.php?nomePeriodo=$periodo");
         }
     }
-?>
